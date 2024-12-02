@@ -6,7 +6,7 @@ export default (state, action)=>{
             console.log('Current transactions:', state.transactions);
             return{
                 ...state, 
-                transtactions: state.transactions
+                transactions: state.transactions
                 .filter(transaction => transaction.id !== action.payload)
             }
             case 'ADD_TRANSACTION':
